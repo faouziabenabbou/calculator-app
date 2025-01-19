@@ -1,2 +1,2 @@
 # calculator-app
-pipeline jenkins
+pipeline jenkins test
