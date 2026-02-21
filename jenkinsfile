@@ -24,5 +24,11 @@ pipeline {
                 powershell 'echo "Build step completed!"'
             }
         }
+	stage('Debug') {
+    	    steps {
+                powershell 'dir'
+    }
+}
+		
     }
 }
