@@ -15,8 +15,9 @@
     "supertest": "^6.3.3"
   },
   "jest": {
-  "testEnvironment": "node"
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }
-
-
