@@ -26,7 +26,8 @@ app.get("/divide/:a/:b", (req, res) => {
     res.json({ result: parseFloat(a) / parseFloat(b) });
 });
 
+// Export app and server separately
 const PORT = 3000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+const server = app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
-module.exports = app;
+module.exports = { app, server }; // <- export server
