@@ -16,7 +16,8 @@ pipeline {
         }
         stage('Run Tests') {
             steps {
-                powershell 'echo "Skipping tests for now"'
+               // powershell 'echo "Skipping tests for now"'
+			   powershell 'npm test'
             }
         }
         stage('Build') {
@@ -27,8 +28,7 @@ pipeline {
 	stage('Debug') {
     	    steps {
                 powershell 'dir'
-    }
-}
-		
-    }
+ 	 	  }
+       }
+	}
 }
