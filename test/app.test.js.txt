@@ -1,6 +1,10 @@
 const request = require("supertest");
 const app = require('../index');
 
+afterAll(() => {
+    server.close(); // <- stop the server so Jest can exit
+});
+
 describe('Calculator API', () => {
   test('adds 2 + 3', async () => {
     const res = await request(app).get('/add/2/3');
