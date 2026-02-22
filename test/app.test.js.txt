@@ -1,4 +1,4 @@
-const request = require('node:fs');
+const request = require("node:fs");
 const app = require('../index');
 
 describe('Calculator API', () => {
